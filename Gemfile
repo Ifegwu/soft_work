@@ -8,6 +8,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.0.rc1'
+
+gem 'webpacker', github: 'rails/webpacker'
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -51,6 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_racer'
 gem 'uglifier'
-gem 'webpacker'
 gem 'foreman'
 gem 'sprockets', '~> 4.x'
