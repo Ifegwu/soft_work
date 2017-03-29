@@ -4,6 +4,8 @@
   "dependencies": {
     "autoprefixer": "^6.7.7",
     "babel-preset-env": "^1.2.2",
+    "boostrap": "3.3.7",
+    "css-loader": "^0.23.1",
     "compression-webpack-plugin": "^0.3.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.1",
@@ -14,7 +16,9 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "sass-loader": "^6.0.3",
-    "webpack-manifest-plugin": "^1.1.0"
+    "style-loader": "^0.13.1",
+    "webpack-manifest-plugin": "^1.1.0",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
