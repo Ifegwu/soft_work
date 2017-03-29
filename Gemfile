@@ -12,10 +12,7 @@ gem 'rails', '~> 5.1.0.rc1'
 gem 'webpacker', github: 'rails/webpacker'
 
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-gem 'mongo'
-gem 'mongoid', '~> 6'
-gem 'bson_ext'
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
