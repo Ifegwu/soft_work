@@ -93,7 +93,7 @@ GEM
     jbuilder (2.6.3)
       activesupport (>= 3.0.0, < 5.2)
       multi_json (~> 1.2)
-    libv8 (5.3.332.38.5)
+    libv8 (5.3.332.38.5-x86_64-linux)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -189,6 +189,7 @@ DEPENDENCIES
   foreman
   jbuilder (~> 2.5)
   mini_racer
+  mongo
   mongoid (~> 6)
   puma (~> 3.7)
   rails (~> 5.1.0.rc1)

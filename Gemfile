@@ -13,6 +13,7 @@ gem 'webpacker', github: 'rails/webpacker'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
+gem 'mongo'
 gem 'mongoid', '~> 6'
 gem 'bson_ext'
 # Use Puma as the app server
