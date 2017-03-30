@@ -59,4 +59,4 @@ gem 'uglifier'
 gem 'foreman'
 gem 'sprockets', '~> 4.x'
 # For es6 react, etc
-gem 'sprocket-commoner'
+gem 'sprockets-commoner'

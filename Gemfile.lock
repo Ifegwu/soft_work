@@ -145,6 +145,7 @@ GEM
     rake (12.0.0)
     rubyzip (1.2.1)
     sass (3.4.23)
+    schmooze (0.1.6)
     selenium-webdriver (3.3.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
@@ -152,6 +153,9 @@ GEM
     sprockets (4.0.0.beta4)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
+    sprockets-commoner (0.6.4)
+      schmooze (~> 0.1.6)
+      sprockets (>= 3, < 5)
     sprockets-rails (3.2.0)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
@@ -194,6 +198,7 @@ DEPENDENCIES
   sass-rails!
   selenium-webdriver
   sprockets (~> 4.x)
+  sprockets-commoner
   turbolinks (~> 5)
   tzinfo-data
   uglifier
