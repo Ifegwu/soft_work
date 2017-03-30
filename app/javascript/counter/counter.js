@@ -1,6 +1,5 @@
 // A simple counter example
 // The setup will be more complicated in modern apps built using React
-import {Button} from 'react-bootstrap';
 const incrementNode = document.getElementById('increment');
 const decrementNode = document.getElementById('decrement');
 const inputNode = document.getElementById('counter');
