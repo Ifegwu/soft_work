@@ -12,10 +12,13 @@ gem 'rails', '~> 5.1.0.rc1'
 gem 'webpacker', github: 'rails/webpacker'
 
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-gem 'mongo'
-gem 'mongoid', '~> 6'
+group :development do
+    gem 'sqlite3'
+end
+#gem 'mongo'
+#gem 'mongoid', '~> 6'
 # Use Puma as the app server
+
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', github: "rails/sass-rails"
@@ -49,14 +52,22 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+    gem 'foreman'
+    gem 'web-console', github: 'rails/web-console'
 end
 
+group :production do
+    gem 'pg'
+    gem 'redis'
+    gem 'heroku-deflater', github: 'remanbsd/heroku-deflater'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_racer'
 gem 'uglifier'
-gem 'foreman'
 gem 'sprockets', '~> 4.x'
 # For es6 react, etc
 gem 'sprockets-commoner'
+gem 'js-route'
+gem 'figaro'
+gem 'devise'
