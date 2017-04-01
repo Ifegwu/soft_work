@@ -59,7 +59,7 @@ end
 group :production do
     gem 'pg'
     gem 'redis'
-    gem 'heroku-deflater', github: 'remanbsd/heroku-deflater'
+    gem 'heroku-deflater', github: 'romanbsd/heroku-deflater'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -68,6 +68,6 @@ gem 'uglifier'
 gem 'sprockets', '~> 4.x'
 # For es6 react, etc
 gem 'sprockets-commoner'
-gem 'js-route'
+gem 'js-routes'
 gem 'figaro'
 gem 'devise'
