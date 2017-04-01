@@ -14,9 +14,14 @@
     "precss": "^1.4.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-mounter": "^1.2.0",
+    "react-router": "^4.0.0",
     "react-tap-event-plugin": "^2.0.1",
     "sass-loader": "^6.0.3",
-    "webpack-manifest-plugin": "^1.1.0"
+    "superagent": "^3.5.2",
+    "superagent-no-cache": "^0.1.1",
+    "webpack-manifest-plugin": "^1.1.0",
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
