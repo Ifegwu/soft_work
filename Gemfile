@@ -13,7 +13,8 @@ gem 'webpacker', github: 'rails/webpacker'
 
 # Use sqlite3 as the database for Active Record
 group :development do
-    gem 'sqlite3'
+    #gem 'sqlite3'
+    gem 'pg'
 end
 #gem 'mongo'
 #gem 'mongoid', '~> 6'
@@ -71,3 +72,5 @@ gem 'sprockets-commoner'
 gem 'js-routes'
 gem 'figaro'
 gem 'devise'
+gem 'jquery-rails'
+
