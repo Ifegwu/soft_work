@@ -26,8 +26,7 @@
     "superagent-no-cache": "^0.1.1",
     "url-loader": "^0.5.8",
     "webpack-manifest-plugin": "^1.1.0",
-    "zone.js": "^0.8.5",
-    "bootstrap": "3.3.7"
+    "zone.js": "^0.8.5"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",

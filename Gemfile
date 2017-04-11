@@ -73,4 +73,4 @@ gem 'js-routes'
 gem 'figaro'
 gem 'devise'
 gem 'jquery-rails'
-
+gem  'bootstrap-generators', '~> 3.3.4'
