@@ -3,5 +3,8 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "bootstrap-generators";
-
+//fixed navbar needs padding http://getbootstrap.com/components/#navbar-fixed-top
+ body {
+  padding-top: 60px;
+ }
 
