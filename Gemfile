@@ -66,11 +66,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'mini_racer'
 gem 'uglifier'
-gem 'sprockets', '~> 4.x'
+#gem 'sprockets', '~> 4.x'
+gem 'sprockets', github: 'rails/sprockets'
 # For es6 react, etc
 gem 'sprockets-commoner'
 gem 'js-routes'
 gem 'figaro'
 gem 'devise'
 gem 'jquery-rails'
-gem  'bootstrap-generators', '~> 3.3.4'
