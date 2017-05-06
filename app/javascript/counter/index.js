@@ -18,10 +18,12 @@ import PersonAdd from 'material-ui/svg-icons/social/person-add';
 import Divider from 'material-ui/Divider';
 import FontIcon from 'material-ui/FontIcon';
 import {Card, CardTitle, CardActions, CardHeader, CardMedia, CardText} from 'material-ui/Card';
-import { Link } from 'react-router';
 import Toggle from 'material-ui/Toggle';
 import IconMenu from 'material-ui/IconMenu';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+import { NavLink } from 'react-router-dom';
+import Group from 'material-ui/svg-icons/social/group';
+import settings from 'material-ui/svg-icons/action/settings';
 import lionLamb from '../../javascript/shared/images/Iam1.png';
 
 injectTapEventPlugin();
@@ -127,16 +129,20 @@ render() {
 		    onRequestChange={(open) => this.setState({open})}
 		>	    		       
 		       <Menu>
-			 <MenuItem leftIcon={<RemoveRedEye />} primaryText="Preview" onTouchTap={this.handleClose.bind(this)}  />
+		         <NavLink to= "/users/sign_in" >
+			   <MenuItem leftIcon={<RemoveRedEye />} primaryText="Preview" onTouchTap={this.handleClose.bind(this)}  />
+			</NavLink>
                        </Menu>		    
 		       <Divider />
                        <Menu>
-		   	 <MenuItem leftIcon={<PersonAdd />} primaryText="Share" onTouchTap={this.handleClose.bind(this)} / >
+		         <NavLink to ="/users/sign_up">
+		   	   <MenuItem leftIcon={<PersonAdd />} primaryText="Share" onTouchTap={this.handleClose.bind(this)} / >
+			 </NavLink>
 		      </Menu>
 		    
 		</Drawer>
                 <Card className="container">
-                  <CardTitle title="SoftWork Application" subtitle="This is the home page of WaterGate Excellence Software" />
+                  <CardTitle title="SoftWork Application" subtitle="This is the home page of WaterGate Software" />
                 </Card>
 		<Card expanded={this.state.expanded} initiallyExpanded={true} onExpandChange={this.handleExpandChange.bind(this)}>
 		  <CardHeader

@@ -74,3 +74,5 @@ gem 'js-routes'
 gem 'figaro'
 gem 'devise'
 gem 'jquery-rails'
+gem 'webpacker-react', "~> 0.2.0"
+gem 'browserify-rails'

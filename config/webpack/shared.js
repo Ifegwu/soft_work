@@ -6,6 +6,7 @@ const webpack = require('webpack')
 const { basename, join, resolve } = require('path')
 const { sync } = require('glob')
 const { readdirSync } = require('fs')
+const webpackDevMiddleware = require('webpack-dev-middleware')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ManifestPlugin = require('webpack-manifest-plugin')
 const extname = require('path-complete-extname')
@@ -34,7 +35,9 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin(JSON.parse(JSON.stringify(env))),
     new ExtractTextPlugin(env.NODE_ENV === 'production' ? '[name]-[hash].css' : '[name].css'),
-    new ManifestPlugin({ fileName: paths.manifest, publicPath, writeToFileEmit: true })
+    new ManifestPlugin({ fileName: paths.manifest, publicPath, writeToFileEmit: true }),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ],
 
   resolve: {
